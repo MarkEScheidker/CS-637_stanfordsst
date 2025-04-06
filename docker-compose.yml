@@ -8,7 +8,7 @@ services:
     volumes:
       - ./jupyter_workspace:/workspace
     working_dir: /workspace
-    command: jupyter lab --ip=0.0.0.0 --allow-root --no-browser
+    command: jupyter lab --ip=0.0.0.0 --allow-root --no-browser --NotebookApp.use_redirect_file=False --NotebookApp.custom_display_url=http://localhost:8888
     environment:
       - NVIDIA_VISIBLE_DEVICES=all
     deploy:
