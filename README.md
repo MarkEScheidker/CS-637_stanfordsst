@@ -4,7 +4,12 @@ A framework for building, training and testing a neural network for the purposes
 ## Repo setup
 run `git clone https://github.com/MarkEScheidker/CS-637_stanfordsst.git` and then `cd CS-637_stanfordsst`
 
+## Basic setup
+Update your Nvidia drivers and docker to the latest versions, it solves so many problems it's not funny
+
 ## Nvidia setup
+If you have issues running the container with a working gpu passthrough try installing this in your wsl environment
+
 make sure you have the required package for linux or WSL using: 
 `curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add -
 distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
